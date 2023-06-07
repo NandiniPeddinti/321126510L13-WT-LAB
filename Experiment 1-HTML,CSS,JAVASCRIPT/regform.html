@@ -1,0 +1,76 @@
+<html>
+<head>
+<title> REGISTRATION PAGE </title>
+<link rel ="stylesheet" href ="form.css">
+</head>
+<body>
+<h1>STUDENT REGISTRATION FORM </h1>
+<form name="f1" action="frm.php" method="post">
+<table class="t">
+<tr>
+<td> FIRST NAME: </td>
+<td><input type="text" name="nm" value=""></td>
+</tr>
+<td> EMAIL: </td>
+<td><input type="email" name="eid"></td>
+</tr>
+<tr>
+<td> PASSWORD: </td>
+<td><input type="password" name ="pwd"></td>
+</tr>
+<tr>
+<td> RE-PASSWORD: </td>
+<td><input type="password" name ="pwd"></td>
+</tr>
+<tr>
+<td> DATE OF BIRTH: </td>
+<td><input type="date" name ="dob"></td>
+</tr>
+<tr>
+<td> Phone Number: </td>
+<td><input type="text" name ="co" maxlength=10></td>
+</tr>
+<tr>
+<td> GENDER: </td>
+<td><input type="radio" name="gen">FEMALE
+<input type="radio"  name="gen">MALE
+</td>
+</tr>
+<tr>
+<td>ADDRESS: </td>
+<td><textarea rows="5" cols="20"></textarea></td>
+</tr>
+<tr>
+<td> RELIGION: </td>
+<td><select class="rel">
+<option  value="hindu" >HINDU</option>
+<option value="c" >CHRISTHAN</option>
+<option value ="m">MUSLIM</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>BRANCH: </td>
+<td><input type="radio"  name="m">CSE
+<input type="radio"  name="m">ECE
+<input type="radio"  name="m">IT
+<input type="radio"  name="m">CIVIL
+<input type="radio"  name="m">CHEM
+</td>
+<tr>
+<td>LANGUAGES:   </td>
+<td><input type="checkbox"  name="lan">Telugu
+<input type="checkbox"  name="lan">Hindi<br>
+<input type="checkbox"  name="lan">English
+<input type="checkbox"  name="lan">Others
+</td>
+</tr>
+<tr>
+<td> <input class="s" type="submit" name="submit"></td>
+<td> <input class="s" type="reset" name="reset"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
+

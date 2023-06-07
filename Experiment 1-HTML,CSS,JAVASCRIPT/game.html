@@ -1,0 +1,61 @@
+<html>
+<head>
+<style>
+#player
+{
+position:absolute;
+top:0;
+left:0;
+width:50px;
+height:50px;
+background-color:red;
+}
+#score
+{
+position:absolute;
+top:10px;
+right:10px;
+font-size:20px;
+}
+</style>
+</head>
+<body>
+<div id="player"></div>
+<div id="score">score:0</div>
+<center><div id="axis">coordinates:</div></center>
+<script>
+var player=document.getElementById("player");
+var position={x:0,y:0};
+var score=0;
+var scoreelement=document.getElementById("score");
+var axiselement=document.setElementById("axis");
+document.addEventListener("keydown",function(event)
+{
+if(event.key==="Arrowup")
+{
+position.y-=10;
+}
+else if(event.key==="Arrowdown")
+{
+position.y+=10;
+}
+else if(event.key==="Arrowleft")
+{
+position.x-=10;
+}
+else if(event.key==="Arrowright")
+{
+position.x+=10;
+}
+player.style.top=position.y+"px";
+player.style.left=position.x+"px";
+axiselement.innerhtml=position.x+","+position.y
+if(position.x===250&&position.y===250)
+{
+score+=10;
+scoreElement.innerhtml="score:"+score);
+}
+});
+</script>
+</body>
+</html>
